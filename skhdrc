@@ -1,4 +1,8 @@
 # change window focus within space
+ctrl - right : yabai -m space --focus next
+ctrl - left : yabai -m space --focus prev
+
+# change window focus within space
 alt - j : yabai -m window --focus south
 alt - k : yabai -m window --focus north
 alt - h : yabai -m window --focus west
@@ -65,3 +69,6 @@ shift + alt - 7 : yabai -m window --space 7;
 ctrl + alt - q : yabai --stop-service
 ctrl + alt - s : yabai --start-service
 ctrl + alt - r : yabai --restart-service
+
+
+
