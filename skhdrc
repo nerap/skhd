@@ -71,4 +71,16 @@ ctrl + alt - s : yabai --start-service
 ctrl + alt - r : yabai --restart-service
 
 
+# Shortcuts for apps
+# Open iterm2.
+#cmd + shift + ctrl - i : osascript -e 'tell application "iTerm2" to create window with default profile command ""' || open -na iTerm
+
+# open Chrome.
+#cmd + shift + ctrl - g : open -n -a "Arc"
+cmd + shift + ctrl - g : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "Arc")) | .[0].id')" || open -na "Arc";
+cmd + shift + ctrl - i : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "iTerm2")) | .[0].id')"|| open -na "iTerm2";
+cmd + shift + ctrl - d : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "DBeaver Community")) | .[0].id')" || open -na "DBeaver Community";
+cmd + shift + ctrl - s : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "Slack")) | .[0].id')" || open -na "Slack";
+cmd + shift + ctrl - n : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "Notion")) | .[0].id')" || open -na "Notion";
+cmd + shift + ctrl - l : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "Linear")) | .[0].id')" || open -na "Linear";
 
