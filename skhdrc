@@ -94,10 +94,10 @@ ctrl + alt - s : yabai --start-service
 ctrl + alt - r : yabai --restart-service
 
 # Shortcut for app
-cmd + shift + ctrl - g : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "Arc")) | .[0].id')" || open -na "Arc";
-cmd + shift + ctrl - i : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "iTerm2")) | .[0].id')"|| open -na "iTerm2";
-cmd + shift + ctrl - d : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "DBeaver Community")) | .[0].id')" || open -na "DBeaver Community";
-cmd + shift + ctrl - s : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "Slack")) | .[0].id')" || open -na "Slack";
-cmd + shift + ctrl - n : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "Notion")) | .[0].id')" || open -na "Notion";
-cmd + shift + ctrl - l : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "Linear")) | .[0].id')" || open -na "Linear";
-cmd + shift + ctrl - o : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "Obsidian")) | .[0].id')" || open -na "Obsidian";
+cmd + shift + ctrl - g : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "Arc")) | .[0].id')" || open -na "arc";
+cmd + shift + ctrl - i : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "iTerm2")) | .[0].id')"|| open -na "iterm";
+cmd + shift + ctrl - d : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "DBeaver Community")) | .[0].id')" || open -na "dbeaver";
+cmd + shift + ctrl - s : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "Slack")) | .[0].id')" || open -na "slack";
+cmd + shift + ctrl - n : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "Notion")) | .[0].id')" || open -na "notion";
+cmd + shift + ctrl - l : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "Linear")) | .[0].id')" || open -na "linear";
+cmd + shift + ctrl - o : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.app == "Obsidian")) | .[0].id')" || open -na "obsidian";
