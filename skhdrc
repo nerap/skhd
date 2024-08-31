@@ -11,8 +11,6 @@ shift + alt - r : yabai -m space --rotate 270
 
 # flip along y-axis
 shift + alt - y : yabai -m space --mirror y-axis
-
-# flip along x-axis
 shift + alt - x : yabai -m space --mirror x-axis
 
 # delete focused space
@@ -22,7 +20,7 @@ alt - q : yabai -m space --destroy
 alt - e : yabai -m window --toggle split
 
 # maximize a window
-shift + alt - m : yabai -m window --toggle zoom-fullscreen
+# shift + alt - m : yabai -m window --toggle zoom-fullscreen
 
 # balance out tree of windows (resize to occupy same area)
 shift + alt - e : yabai -m space --balance
@@ -57,6 +55,12 @@ shift + cmd - j : yabai -m window --warp south
 shift + cmd - k : yabai -m window --warp north
 shift + cmd - l : yabai -m window --warp east
 
+# increase window size
+ctrl + alt - h : yabai -m window --resize left:-40:0
+ctrl + alt - j : yabai -m window --resize bottom:0:40
+ctrl + alt - k : yabai -m window --resize top:0:-40
+ctrl + alt - l : yabai -m window --resize right:40:0
+
 # move window to display left and right
 shift + alt - s : yabai -m window --display west; yabai -m display --focus west;
 shift + alt - g : yabai -m window --display east; yabai -m display --focus east;
@@ -82,12 +86,6 @@ alt - 4 : yabai -m space --focus 4;
 alt - 5 : yabai -m space --focus 5;
 alt - 6 : yabai -m space --focus 6;
 alt - 7 : yabai -m space --focus 7;
-
-# increase window size
-ctrl + alt - h : yabai -m window --resize left:-40:0
-ctrl + alt - j : yabai -m window --resize bottom:0:40
-ctrl + alt - k : yabai -m window --resize top:0:-40
-ctrl + alt - l : yabai -m window --resize right:40:0
 
 # stop/start/restart yabai
 ctrl + alt - q : yabai --stop-service
